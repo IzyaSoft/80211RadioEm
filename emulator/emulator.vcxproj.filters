@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="MAC">
+      <UniqueIdentifier>{6aac3098-0f69-4ebe-bcb6-0c070efd2f06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PHY">
+      <UniqueIdentifier>{55d943d2-757e-4c90-9a7c-c5cbaa46552d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PHY\Convertors">
+      <UniqueIdentifier>{34de607a-d885-4f7a-ac3e-9f1b4b6a74c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OSI">
+      <UniqueIdentifier>{2d8609bb-5319-4b33-9da1-d4213701ad78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{17bdd324-7f37-4073-b19d-57b801a4b454}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\VirtualDevice.cpp" />
+    <ClCompile Include="src\emulator.cpp" />
+    <ClCompile Include="src\PHY\PhyPdu.cpp">
+      <Filter>PHY</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MAC\MacPdu.cpp">
+      <Filter>MAC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PHY\Convertors\ConstellationMapper.cpp">
+      <Filter>PHY\Convertors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PHY\Convertors\ScramblerConvertor.cpp">
+      <Filter>PHY\Convertors</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PHY\Convertors\Fft.cpp">
+      <Filter>PHY\Convertors</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\VirtualDevice.h" />
+    <ClInclude Include="src\PHY\CodingType.h">
+      <Filter>PHY</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PHY\PhyPdu.h">
+      <Filter>PHY</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PHY\Convertors\ConvertorType.h">
+      <Filter>PHY\Convertors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PHY\Convertors\IConvertor.h">
+      <Filter>PHY\Convertors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MAC\MacPdu.h">
+      <Filter>MAC</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OSI\IOsiPdu.h">
+      <Filter>OSI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\PlainTypes.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PHY\Convertors\ConstellationMapper.h">
+      <Filter>PHY\Convertors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PHY\Convertors\ConstellationType.h">
+      <Filter>PHY\Convertors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PHY\Convertors\ConvertionDirection.h">
+      <Filter>PHY\Convertors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PHY\Convertors\IRadioConvertor.h">
+      <Filter>PHY\Convertors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PHY\Convertors\ScramblerConvertor.h">
+      <Filter>PHY\Convertors</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PHY\Convertors\Fft.h">
+      <Filter>PHY\Convertors</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
